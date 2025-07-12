@@ -1,6 +1,9 @@
+import 'package:chess_board/piece.dart';
+
 class Square {
   final int row;
   final int col;
+  final Piece piece;
 
-  const Square({required this.row, required this.col});
+  Square({required this.row, required this.col, required this.piece});
 }

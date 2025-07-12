@@ -22,5 +22,5 @@ jobs:
         run: flutter pub get
       - name: Verify formatting
         run: dart format --set-exit-if-changed .
-      - name: Analyze Dart code
+      - name: Flutter Dart code
         run: flutter analyze
