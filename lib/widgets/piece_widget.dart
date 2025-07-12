@@ -1,4 +1,3 @@
-// import 'package:chess_board/constants.dart';
 import 'package:chess_board/piece.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -11,11 +10,7 @@ class PieceWidget extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // final int row = pos ~/ numOfRows;
-    // final int col = pos % numOfRows;
-    return Center(
-      child: Container(child: Text(getPieceSymbol(piece.pieceType))),
-    );
+    return Center(child: Text(getPieceSymbol(piece.pieceType)));
   }
 }
 
