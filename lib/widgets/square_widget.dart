@@ -5,7 +5,6 @@ import 'package:chess_board/providers.dart';
 import 'package:chess_board/square.dart';
 import 'package:chess_board/utils.dart';
 import 'package:chess_board/widgets/piece_widget.dart';
-import 'package:chess_board/widgets/piece_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -21,11 +20,6 @@ class SquareWidget extends ConsumerWidget {
     required this.isLight,
     required this.pos,
     required this.boardSize,
-  }) : square = Square(
-         row: pos ~/ numOfRows,
-         col: pos % numOfRows,
-         piece: Piece(pieceType: board[pos ~/ numOfRows][pos % numOfRows]),
-       );
   }) : square = Square(
          row: pos ~/ numOfRows,
          col: pos % numOfRows,
