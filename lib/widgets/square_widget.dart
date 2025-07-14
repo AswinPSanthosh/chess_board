@@ -37,6 +37,7 @@ class SquareWidget extends ConsumerWidget {
     square.piece = Piece(pieceType: currentBoard[row][col]);
 
     return GestureDetector(
+      key: Key('square_${row}_$col'),
       onTap: () => onTapFn(this, ref),
       child: Container(
         width: sqaureSize,
